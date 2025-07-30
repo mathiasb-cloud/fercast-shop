@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+  <div class="nav-left">
+    <span class="logo">FERCAST MEN'S</span>
+  </div>
+  
+  
+  <div class="desktop-menu">
+    <a href="#">SHOP</a>
+    <a href="#">ROPA</a>
+    <a href="#">PERFUMES</a>
+    <a href="#">JOYAS</a>
+    <a href="#">ABOUT</a>
+    <a href="#">PERFUME GUIDE</a>
+    <a href="#">JOURNAL</a>
+    <a href="#">EUR &#9662;</a>
+    <a href="#">🔍</a>
+    <a href="#">👤</a>
+  </div>
+  <div class="nav-right">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+
+  <!-- Menú desplegable -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#">SHOP</a>
+    <a href="#">ROPA</a>
+    <a href="#">PERFUMES</a>
+    <a href="#">JOYAS</a>
+    <a href="#">ABOUT</a>
+    <a href="#">PERFUME GUIDE</a>
+    <a href="#">JOURNAL</a>
+    <a href="#">EUR &#9662;</a>
+    <a href="#">🔍</a>
+    <a href="#">👤</a>
+  </nav>
+</header>
+
+  <div class="banner" style="background-color: black; align-items: center;">
+    <img src="/images/angelica-echeverry-752a7fdivow-unsplash.jpg">
+    <h1 class="titulo-banner">FRAGANCIAS <br>FERCAST</h1>
+
+  </div>
+  <h1 class="thin-title">LO MEJOR DE HOY</h1>
+
+  <section class="product-section">
+  <div class="product">
+    <div class="product-image" style="background-image: url('/images/depositphotos_673639284-stock-photo-topless-muscle-sexy-man-black.jpg');">
+      <img src="/images/WhatsApp_Image_2025-07-27_at_6.10.05_PM-removebg-preview.png" alt="Green Cedar">
+      
+    </div>
+    <div class="product-info">
+      <p class="product-description">Cadena Dorada y Plateada</p>
+      <p class="product-price">S/ 19</p>
+      <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola%2C%20quiero%20comprar%20el%20perfume: %20XOOL%20Yanbal','_blank')">
+  COMPRAR
+</button>
+
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image" style="background-image: url('/images/WhatsApp\ Image\ 2025-07-28\ at\ 3.27.34\ PM.jpeg'); fill-opacity: var(560px);">
+      <img src="/images/perfume-removebg-preview.png" alt="Pink Iris" style="width: 450px;">
+      
+    </div>
+    <div class="product-info">
+      <p class="product-description">Perfume XOOL Yanbal</p>
+      <p class="product-price">S/ 49</p>
+      <button class="quick-add">COMPRAR</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image" style="background-image: url('/images/polo11.jpg');">
+    
+      
+    </div>
+    <div class="product-info">
+      <p class="product-description">Polo OverSize Calvin Klein</p>
+      <p class="product-price">S/ 49</p>
+      <button class="quick-add">COMPRAR</button>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<section class="promo-section">
+  <div class="promo-carousel">
+    <img src="/images/Airpods_Pro_2-scaled.jpg" class="active" />
+    <img src="/images/airpods222.jpg" />
+    <img src="/images/airpodspro2-funciones.jpg" />
+  </div>
+  <div class="promo-text">
+    <p class="mini-title">Calidad Original</p>
+    <h2 class="main-title">AIRPODS PRO 2G</h2>
+    <blockquote>Funciones en iPhone: cancelación activa de ruido, el modo de sonido ambiente adaptable, el audio espacial personalizado, la ecualización adaptativa</blockquote>
+    <p class="author">Tipo Lightning</p>
+    <button class="discover-btn">COMPRAR</button>
+  </div>
+</section>
+
+
+
+
+
+
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+  }
+
+
+  let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Scroll hacia abajo → ocultar navbar
+      navbar.classList.add('hidden');
+    } else {
+      // Scroll hacia arriba → mostrar navbar
+      navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+  });
+
+  
+  const images = document.querySelectorAll(".promo-carousel img");
+  let index = 0;
+
+  setInterval(() => {
+    images[index].classList.remove("active");
+    index = (index + 1) % images.length;
+    images[index].classList.add("active");
+  }, 4000);
+
+
+</script>
+
+</body>
+</html>

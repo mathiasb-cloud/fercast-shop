@@ -1,0 +1,536 @@
+/* -------------------- FUENTE PERSONALIZADA -------------------- */
+@font-face {
+  font-family: 'FounderGrotesk-Light';
+  src: url('/fonts/FoundersGrotesk-Light.otf') format('opentype');
+}
+
+/* -------------------- ESTILOS GENERALES -------------------- */
+body {
+  margin: 0;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+  background-color: #f5f4f0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px; /* más delgado */
+  background-color: #f5f4f0;
+  border-bottom: 0.5px solid #bfbec0;
+  flex-wrap: wrap;
+  transition: top 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+
+
+/* Ocultar navbar al hacer scroll hacia abajo */
+.navbar.hidden {
+  top: -100px; /* se esconde hacia arriba */
+}
+
+
+
+
+
+.nav-left{
+  height: 100%;
+  border-right: 1px solid; 
+  border-color: #bfbec0;
+  margin-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.nav-left .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #414042;
+}
+
+.nav-center,
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-center a,
+.nav-right a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.icon-round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* -------------------- BANNER -------------------- */
+.banner {
+  position: relative; /* necesario para que el título se posicione dentro */
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* Título superpuesto al final del banner */
+.titulo-banner {
+  position: absolute;
+  bottom: -10px; /* lo coloca al fondo del banner */
+  left: 25%;
+  transform: translateX(-50%);
+  
+  
+  mix-blend-mode: difference;
+  padding: 10px 25px;
+  font-size: 110px;
+  color: white;
+  
+  
+  text-align: left;
+}
+
+
+/* -------------------- PRODUCTOS -------------------- */
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.product {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.product-image img {
+  width: 250px;
+  height: auto;
+  z-index: 2;
+}
+
+.product-info {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-description,
+.product-price {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.quick-add {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  font-size: 13px;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.quick-add:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* -------------------- RESPONSIVE SOLO PARA CELULAR -------------------- */
+@media screen and (max-width: 768px) {
+  /* NAVBAR: horizontal, más delgada */
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    width: 86%;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-left .logo {
+    font-size: 15px;
+    
+  }
+
+  .nav-center a,
+  .nav-right a {
+    font-size: 12px;
+  }
+
+
+
+  .thin-title {
+  font-weight: 400; 
+  font-size: 10px;
+  padding: 10px;
+}
+
+  /* BANNER ajustado */
+  .banner {
+    height: 500px;
+    margin-top: 55px;
+  }
+
+  .banner img {
+    height: 700px;
+    object-fit: cover;
+    margin-top: -15px;
+  }
+  .titulo-banner{
+    font-size: 42px;
+    margin-bottom: 150px;
+    left: 45%;
+  }
+
+  /* PRODUCTOS en columna */
+  .product-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product-image {
+    height: 330px;
+    padding: 40px 0;
+  }
+
+  .product-image img {
+    width: 180px;
+  }
+
+  .product-info {
+    padding: 20px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .product-description,
+  .product-price {
+    font-size: 15px;
+  }
+
+  .quick-add {
+    width: 90%;
+    max-width: 300px;
+    margin: 15px auto 0;
+  }
+}
+
+
+/* ------------ Estilos base ------------ */
+.main-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #414042;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f5f4f0;
+  position: absolute;
+  top: 100%;
+  left: 27px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  z-index: 999;
+  padding: 0;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 18px 20px;
+  border-bottom: 1px solid #d4d4d4;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  color: #414042;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+}
+
+.mobile-menu a:hover {
+  background-color: #eaeaea;
+}
+
+
+/* ------------ Responsive Navbar ------------ */
+@media screen and (max-width: 768px) {
+  .nav-center,
+  .nav-right,
+  .nav-left {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .nav-center {
+    justify-content: center;
+  }
+
+  .nav-right {
+    
+  }
+
+  .nav-left {
+    justify-content: flex-start;
+    margin-right: 60px;
+  }
+
+  .nav-center a,
+  .nav-right a,
+  .nav-center,
+  .nav-right nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .thin-title {
+    font-size: 10px;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
+
+
+/* Menú de escritorio (solo PC) */
+.desktop-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.desktop-menu a {
+  text-decoration: none;
+  color: #414042;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Ocultar en móviles */
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f4f0;
+  
+  border-top: 1px solid #ddd;
+}
+
+.promo-carousel {
+  flex: 1;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  width: 750px;
+}
+
+.promo-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.promo-carousel img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.promo-text {
+  flex: 1;
+  padding: 0 60px;
+  color: #414042;
+}
+
+.promo-text .mini-title {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.promo-text .main-title {
+  font-size: 60px;
+  margin: 0 0 20px;
+  font-weight: normal;
+}
+
+.promo-text blockquote {
+  font-style: italic;
+  color: #777;
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.promo-text .author {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.discover-btn {
+  padding: 12px 30px;
+  border: 1px solid #414042;
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.discover-btn:hover {
+  background-color: #414042;
+  color: #fff;
+}
+
+.thin-title {
+  font-weight: 400; 
+  color: #414042;
+   padding: 20px; 
+   font-size: 32px; 
+   margin-left: 50px;
+}
+
+
+@media (max-width: 768px) {
+  .promo-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .promo-carousel {
+    width: 100%;
+    height: 300px;
+  }
+
+  .promo-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .promo-text .main-title {
+    font-size: 28px;
+  }
+
+  .promo-text blockquote,
+  .promo-text .mini-title,
+  .promo-text .author {
+    font-size: 14px;
+  }
+
+  .discover-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .promo-carousel {
+    position: relative;
+    height: 250px;
+  }
+
+  .promo-carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
