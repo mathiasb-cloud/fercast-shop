@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="navbar">
+    <div class="container">
+      <header class="navbar">
   <div class="nav-left">
     <span class="logo">FERCAST MEN'S</span>
   </div>
@@ -15,15 +17,15 @@
   
   <div class="desktop-menu">
     <a href="#">SHOP</a>
-    <a href="#">ROPA</a>
-    <a href="#">PERFUMES</a>
-    <a href="#">JOYAS</a>
-    <a href="#">ABOUT</a>
-    <a href="#">PERFUME GUIDE</a>
-    <a href="#">JOURNAL</a>
-    <a href="#">EUR &#9662;</a>
-    <a href="#">🔍</a>
-    <a href="#">👤</a>
+    <a href="#" style="margin-left: 15px;">ROPA</a>
+    <a href="#"style="margin-left: 15px;">PERFUMES</a>
+    <a href="#"style="margin-left: 15px;">JOYAS</a>
+    <a href="#"style="margin-left: 15px;">SOBRE NOSOTROS</a>
+    <a href="#"style="margin-left: 15px;">GUIA DE TALLAS</a>
+    <a href="#"style="margin-left: 15px;">SOPORTE</a>
+    
+    
+    <a href="#" style="margin-left: 400px;"><i class="fas fa-user"></i></a>
   </div>
   <div class="nav-right">
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -35,20 +37,32 @@
     <a href="#">ROPA</a>
     <a href="#">PERFUMES</a>
     <a href="#">JOYAS</a>
-    <a href="#">ABOUT</a>
-    <a href="#">PERFUME GUIDE</a>
-    <a href="#">JOURNAL</a>
-    <a href="#">EUR &#9662;</a>
-    <a href="#">🔍</a>
-    <a href="#">👤</a>
+    <a href="#">SOBRE NOSOTROS</a>
+    <a href="#">GUIA DE TALLAS</a>
+    <a href="#">SOPORTE</a>
+    
+    
+    <a href="#"><i class="fas fa-user"></i></a>
   </nav>
 </header>
 
-  <div class="banner" style="background-color: black; align-items: center;">
-    <img src="/images/angelica-echeverry-752a7fdivow-unsplash.jpg">
-    <h1 class="titulo-banner">FRAGANCIAS <br>FERCAST</h1>
+  <div class="banner">
+  <img src="/images/angelica-echeverry-752a7fdivow-unsplash.jpg" alt="Banner">
+  <h1 class="titulo-banner">FERCAST<br>FRAGANCIAS</h1>
 
+  <div class="banner-info">
+    <hr class="banner-line">
+    <div class="banner-description-container">
+      <p class="banner-description">
+        EXPLORA LA FRAGANCIA IDEAL Y UNICA PARA CADA OCACION, CON LAS NOTAS DE MAYOR DEMANDA Y BUSCADA POR LOS HOMBRES
+      </p>
+      <button class="banner-btn">DESCUBRIR PERFUMES</button>
+    </div>
   </div>
+</div>
+
+
+
   <h1 class="thin-title">LO MEJOR DE HOY</h1>
 
   <section class="product-section">
@@ -60,7 +74,7 @@
     <div class="product-info">
       <p class="product-description">Cadena Dorada y Plateada</p>
       <p class="product-price">S/ 19</p>
-      <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola%2C%20quiero%20comprar%20el%20perfume: %20XOOL%20Yanbal','_blank')">
+      <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola%2C%20quiero%20comprar%20una%20cadena%20de20%Fercast: %20XOOL%20Yanbal','_blank')">
   COMPRAR
 </button>
 
@@ -75,7 +89,9 @@
     <div class="product-info">
       <p class="product-description">Perfume XOOL Yanbal</p>
       <p class="product-price">S/ 49</p>
-      <button class="quick-add">COMPRAR</button>
+      <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola%2C%20quiero%20comprar%20el%20perfume: %20XOOL%20Yanbal','_blank')">
+  COMPRAR
+</button>
     </div>
   </div>
 
@@ -87,7 +103,9 @@
     <div class="product-info">
       <p class="product-description">Polo OverSize Calvin Klein</p>
       <p class="product-price">S/ 49</p>
-      <button class="quick-add">COMPRAR</button>
+      <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola%2C%20quiero%20comprar%20un%20polo20%OverSize20%de20%tu20%tienda: %20XOOL%20Yanbal','_blank')">
+  COMPRAR
+</button>
     </div>
   </div>
 </section>
@@ -110,9 +128,63 @@
     <h2 class="main-title">AIRPODS PRO 2G</h2>
     <blockquote>Funciones en iPhone: cancelación activa de ruido, el modo de sonido ambiente adaptable, el audio espacial personalizado, la ecualización adaptativa</blockquote>
     <p class="author">Tipo Lightning</p>
-    <button class="discover-btn">COMPRAR</button>
+    <button class="quick-add" onclick="window.open('https://wa.me/+51924552423?text=Hola,20%quiero20%comprar20%los20%AirPods20%Pro20%2da20%generación20%👾','_blank')">
+  COMPRAR
+</button>
   </div>
 </section>
+
+    </div>
+
+
+    <footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <ul>
+          <li><a href="#">CONTACTANOS</a></li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">STOCKISTS</a></li>
+          <li><a href="#">THE FABRIEK</a></li>
+          <li><a href="#">PERFUME GUIDE</a></li>
+          <li><a href="#">FRAGRANCE FINDER</a></li>
+          <li><a href="#">TERMS</a></li>
+          <li><a href="#">PRIVACY</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">100% NATURAL</a></li>
+          <li><a href="#">BIOTECHNOLOGY</a></li>
+          <li><a href="#">CLEAN</a></li>
+          <li><a href="#">CRUELTY-FREE</a></li>
+          <li><a href="#">NON-TOXIC</a></li>
+          <li><a href="#">PHTHALATE-FREE</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">OUR STORY</a></li>
+          <li><a href="#">TRANSPARENCY</a></li>
+          <li><a href="#">SUSTAINABILITY</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 FERCAST. ALL RIGHTS RESERVED.</p>
+    <p class="footer-right">RON ▾</p>
+  </div>
+</footer>
+
 
 
 
