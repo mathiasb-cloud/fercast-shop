@@ -749,3 +749,287 @@ body {
 
 
 
+
+
+
+
+
+
+
+.seccion-joyas{
+  margin-top: 100px;
+  padding-left: 40px;
+  display: flex;
+  margin-bottom: 80px;
+}
+.seccion-joyas h1{
+  font-size: 30px;
+  font-weight: 400;
+  color: #414042;
+  
+}
+.titulo-joyas{
+  width: 400px;
+}
+.descripcion-joyas{
+  width: 500px;
+  margin-left: 190px;
+  height: 100px;
+  
+}
+.descripcion-joyas p{
+  font-size: 22px;
+  color: #414042;
+  font-weight: 300;
+  
+}
+
+
+
+
+
+
+
+
+.perf-product-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f3ef;
+  font-family: sans-serif;
+  min-height: calc(100vh - 120px); 
+  
+}
+
+
+
+.perf-left,
+.perf-center,
+.perf-right {
+  flex: 1; 
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+.perf-center {
+  border: 0.5px solid #ccc;
+}
+
+.perf-right {
+  border: 0.5px solid #ccc;
+}
+
+/* Columna izquierda */
+.perf-left {
+  background: url('/images/cadena-fondo1.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.perf-left h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+/* Columna central */
+.perf-center {
+  text-align: center;
+}
+
+.perf-badge {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.perf-image {
+  width: 750px; 
+  max-height: 80%;
+  object-fit: contain; 
+}
+
+
+.perf-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+  color: #414042;
+}
+
+.perf-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: -10px;
+}
+
+.perf-price {
+  font-size: 17px;
+  color: #414042;
+  
+}
+
+.perf-button {
+  padding: 10px 25px;
+  background-color: #414042;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.perf-button:hover{
+  background-color: #000;
+  color: white;
+}
+
+/* Columna derecha */
+.perf-notes p {
+  font-size: 13px;
+  color: #444;
+  margin: 5px 0;
+  
+}
+.perf-notes{
+  margin-bottom: 290px;
+}
+
+.perf-mood-label {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.perf-mood-text {
+  font-size: 13px;
+  color: #414042;
+  margin-bottom: 10px;
+}
+
+.perf-more-info {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+
+
+
+.perf-product-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f3ef;
+  font-family: sans-serif;
+  height: calc(100vh - 120px); 
+  
+}
+
+.perf-left,
+.perf-center,
+.perf-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-center {
+  border: 0.5px solid #ccc;
+  text-align: center;
+  align-items: center;
+}
+
+.perf-right {
+  border: 0.5px solid #ccc;
+}
+
+/* contenedor fijo para la imagen */
+.perf-image-container {
+  height: 350px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  width: 350px;
+}
+
+.perf-image {
+  height: 100%;
+  width: auto;
+  transform: scale(1.4);
+}
+
+
+
+
+
+.perf-left2 {
+  background: url('/images/cadena-hombre2.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-left2 h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+
+.perf-left3 {
+  background: url('/images/cadena-hombre3.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-left3 h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
