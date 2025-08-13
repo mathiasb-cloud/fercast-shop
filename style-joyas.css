@@ -451,7 +451,7 @@ body {
   border: 0.5px solid #ccc;
 }
 
-/* contenedor fijo para la imagen */
+
 .perf-image-container {
   height: 350px; 
   display: flex;
@@ -495,7 +495,7 @@ body {
 
 
 .perf-left3 {
-  background: url('/images/cadena-hombre3.jpg') center/cover no-repeat;
+  background: url('/images/fondo-hombre4.jpeg') center/cover no-repeat;
   color: white;
   align-items: center;
   text-align: center;
@@ -523,10 +523,10 @@ body {
 
 
 
-/* ----- Ajustes para móvil ----- */
+
 @media screen and (max-width: 768px) {
 
-  /* Acomoda la sección de joyas */
+  
   .seccion-joyas {
     flex-direction: column;
     padding: 20px;
@@ -546,7 +546,7 @@ body {
     line-height: 1.4;
   }
 
-  /* Carrusel en móvil */
+  
   .perf-product-section {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -564,7 +564,7 @@ body {
     scroll-snap-align: start;
   }
 
-  /* Orden: center -> left -> right */
+
   .perf-center {
     order: 1;
   }
@@ -577,7 +577,7 @@ body {
     order: 3;
   }
 
-  /* Imagen ajustada para no desbordar */
+ 
   .perf-image-container {
     width: 100%;
     height: auto;
@@ -589,4 +589,76 @@ body {
     transform: none;
   }
 }
+
+
+
+.main-footer {
+  background-color: white;
+  color: #414042;
+  font-family: 'Courier New', monospace;
+  padding: 50px 40px 20px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-social a {
+  color: #414042;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.6;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #414042;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+.footer-right {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+
+
 
