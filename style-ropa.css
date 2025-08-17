@@ -1,0 +1,661 @@
+@font-face {
+  font-family: 'FounderGrotesk-Light';
+  src: url('/fonts/FoundersGrotesk-Light.otf') format('opentype');
+}
+
+/* -------------------- ESTILOS GENERALES -------------------- */
+body {
+  margin: 0;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+  background-color: #f5f4f0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px; /* más delgado */
+  background-color: #f5f4f0;
+  border-bottom: 0.5px solid #bfbec0;
+  flex-wrap: wrap;
+  transition: top 0.4s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 71px;
+ 
+}
+
+.navbar.hidden {
+  top: -100px; 
+}
+
+.nav-left{
+  height: 100%;
+  border-right: 1px solid; 
+  border-color: #bfbec0;
+  margin-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.nav-left .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #414042;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.nav-center,
+.nav-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-center a,
+.nav-right a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.icon-round {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* NAVBAR: horizontal, más delgada */
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 74px;
+  }
+
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+
+
+  .nav-left .logo {
+    font-size: 19px;
+    
+  }
+
+  .nav-center a,
+  .nav-right a {
+    font-size: 12px;
+  }
+
+
+
+  .thin-title {
+  font-weight: 400; 
+  font-size: 10px;
+  padding: 10px;
+}
+}
+
+
+
+
+/* ------------ Estilos base ------------ */
+.main-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #414042;
+  cursor: pointer;
+  display: none;
+  margin-left: 50px;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f5f4f0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  z-index: 999;
+  padding: 0;
+}
+
+.mobile-menu.show {
+  display: flex;
+}
+
+.mobile-menu a {
+  padding: 18px 20px;
+  border-bottom: 1px solid #d4d4d4;
+  text-align: left;
+  text-decoration: none;
+  font-size: 14px;
+  color: #414042;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+}
+
+.mobile-menu a:hover {
+  background-color: #eaeaea;
+}
+
+
+/* ------------ Responsive Navbar ------------ */
+@media screen and (max-width: 768px) {
+  .nav-center,
+  .nav-right,
+  .nav-left {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .nav-center {
+    justify-content: center;
+  }
+
+  
+
+  .nav-left {
+    justify-content: flex-start;
+    margin-right: 10px;
+    margin-top: 2px;
+    
+    align-items: center;
+  }
+
+  .nav-center a,
+  .nav-right a,
+  .nav-center,
+  .nav-right nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .thin-title {
+    font-size: 10px;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}
+
+/* Menú de escritorio (solo PC) */
+.desktop-menu {
+  display: flex;
+  gap: 15px;
+  margin-left: 120px;
+}
+
+.desktop-menu a {
+  text-decoration: none;
+  color: #414042;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Ocultar en móviles */
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+.seccion-joyas{
+  margin-top: 100px;
+  padding-left: 40px;
+  display: flex;
+  margin-bottom: 80px;
+}
+.seccion-joyas h1{
+  font-size: 30px;
+  font-weight: 400;
+  color: #414042;
+  
+}
+.titulo-joyas{
+  width: 400px;
+}
+.descripcion-joyas{
+  width: 500px;
+  margin-left: 190px;
+  height: 100px;
+  
+}
+.descripcion-joyas p{
+  font-size: 22px;
+  color: #414042;
+  font-weight: 300;
+  
+}
+
+
+
+
+
+
+
+
+.perf-product-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f3ef;
+  font-family: sans-serif;
+  min-height: calc(100vh - 120px); 
+  
+}
+
+
+
+.perf-left,
+.perf-center,
+.perf-right {
+  flex: 1; 
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+.perf-center {
+  border: 0.5px solid #ccc;
+}
+
+.perf-right {
+  border: 0.5px solid #ccc;
+}
+
+/* Columna izquierda */
+.perf-left {
+  background: url('/images/polo10.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.perf-left h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+/* Columna central */
+.perf-center {
+  text-align: center;
+}
+
+.perf-badge {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.perf-image {
+  width: 750px; 
+  max-height: 80%;
+  object-fit: contain; 
+}
+
+
+.perf-title {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+  color: #414042;
+}
+
+.perf-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: -10px;
+}
+
+.perf-price {
+  font-size: 17px;
+  color: #414042;
+  
+}
+
+.perf-button {
+  padding: 10px 25px;
+  background-color: #414042;
+  color: white;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.perf-button:hover{
+  background-color: #000;
+  color: white;
+}
+
+/* Columna derecha */
+.perf-notes p {
+  font-size: 13px;
+  color: #444;
+  margin: 5px 0;
+  
+}
+.perf-notes{
+  margin-bottom: 290px;
+}
+
+.perf-mood-label {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.perf-mood-text {
+  font-size: 13px;
+  color: #414042;
+  margin-bottom: 10px;
+}
+
+.perf-more-info {
+  font-size: 12px;
+  color: #777;
+  cursor: pointer;
+}
+
+
+
+.perf-product-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f3ef;
+  font-family: sans-serif;
+  height: calc(100vh - 120px); 
+  
+}
+
+.perf-left,
+.perf-center,
+.perf-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-center {
+  border: 0.5px solid #ccc;
+  text-align: center;
+  align-items: center;
+}
+
+.perf-right {
+  border: 0.5px solid #ccc;
+}
+
+
+.perf-image-container {
+  height: 350px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  width: 350px;
+}
+
+.perf-image {
+  height: 100%;
+  width: auto;
+  transform: scale(1.4);
+}
+
+
+
+
+
+.perf-left2 {
+  background: url('/images/polo20.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-left2 h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+
+.perf-left3 {
+  background: url('/images/polo30.jpg') center/cover no-repeat;
+  color: white;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perf-left3 h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  padding: 10px 20px;
+  mix-blend-mode: difference;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  
+  .seccion-joyas {
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .titulo-joyas {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .descripcion-joyas {
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+  .descripcion-joyas p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  
+  .perf-product-section {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .perf-left,
+  .perf-left2,
+  .perf-left3,
+  .perf-center,
+  .perf-right {
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+  }
+
+
+  .perf-center {
+    order: 1;
+  }
+  .perf-left,
+  .perf-left2,
+  .perf-left3 {
+    order: 2;
+  }
+  .perf-right {
+    order: 3;
+  }
+
+ 
+  .perf-image-container {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .perf-image {
+    max-width: 100%;
+    height: auto;
+    transform: none;
+  }
+}
+
+
+
+.main-footer {
+  background-color: white;
+  color: #414042;
+  font-family: 'Courier New', monospace;
+  padding: 50px 40px 20px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-social a {
+  color: #414042;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.6;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #414042;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+.footer-right {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+
+
+
