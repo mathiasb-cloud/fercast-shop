@@ -104,11 +104,11 @@ body {
   margin-top: 50px;
 }
 
-/* Título superpuesto al final del banner */
+
 .titulo-banner {
   position: absolute;
-  bottom: 15px; /* lo coloca al fondo del banner */
-  left: 22%;
+  bottom: 15px; 
+  left: 26%;
   transform: translateX(-50%);
   
   
@@ -613,6 +613,7 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
+  width: 700px;
 }
 
 .banner-description {
@@ -621,6 +622,7 @@ body {
   flex: 1;
   margin: 0;
   margin-left: 50px;
+  width: 200px;
   
   
 }
@@ -635,7 +637,7 @@ body {
   color: #000000;
   cursor: pointer;
   transition: 0.3s ease;
-  margin-right: 1000px;
+  margin-right: 10px;
   text-align: center;
   width: 204px;
 }

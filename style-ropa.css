@@ -422,7 +422,7 @@ body {
   flex-wrap: wrap;
   background-color: #f4f3ef;
   font-family: sans-serif;
-  height: calc(100vh - 120px); 
+  /*height: calc(100vh - 120px); /*/
   
 }
 
