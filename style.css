@@ -113,7 +113,7 @@ body {
   
   
   mix-blend-mode: difference;
-  padding: 10px 25px;
+  padding: 10px 25px 0px 43px;
   font-size: 110px;
   color: white;
   line-height: 80%;
@@ -613,7 +613,7 @@ body {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-  width: 700px;
+  
 }
 
 .banner-description {
@@ -622,7 +622,7 @@ body {
   flex: 1;
   margin: 0;
   margin-left: 50px;
-  width: 200px;
+  
   
   
 }
