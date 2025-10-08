@@ -35,9 +35,9 @@ body {
 
 
 
-/* Ocultar navbar al hacer scroll hacia abajo */
+
 .navbar.hidden {
-  top: -100px; /* se esconde hacia arriba */
+  top: -100px; 
 }
 
 
@@ -89,7 +89,7 @@ body {
 
 /* -------------------- BANNER -------------------- */
 .banner {
-  position: relative; /* necesario para que el título se posicione dentro */
+  position: relative; 
   width: 100%;
   height: 600px;
   overflow: hidden;
@@ -192,7 +192,7 @@ body {
 
 /* -------------------- RESPONSIVE SOLO PARA CELULAR -------------------- */
 @media screen and (max-width: 768px) {
-  /* NAVBAR: horizontal, más delgada */
+  
   .navbar {
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,7 +251,7 @@ body {
     left: 45%;
   }
 
-  /* PRODUCTOS en columna */
+ 
   .product-section {
     flex-direction: column;
     padding: 0;
@@ -586,7 +586,7 @@ body {
 
 .banner-info {
   position: absolute;
-  bottom: 30px; /* justo debajo del h1 */
+  bottom: 30px; 
   
   display: flex;
   flex-direction: column;
@@ -778,7 +778,7 @@ body {
 
 
 @media screen and (max-width: 768px) {
-  /* Ajuste: contenedor relativo para posicionar botones */
+  
   .perf-product-section {
     position: relative;
     flex-wrap: nowrap;
