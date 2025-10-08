@@ -246,9 +246,9 @@ body {
     margin-top: -15px;
   }
   .titulo-banner{
-    font-size: 45px;
+    font-size: 55px;
     margin-bottom: 165px;
-    left: 37%;
+    left: 45%;
   }
 
   /* PRODUCTOS en columna */
@@ -667,7 +667,7 @@ body {
   }
 
   .banner-btn {
-    margin: 0 auto 20px 50px;
+    
   }
 }
 
