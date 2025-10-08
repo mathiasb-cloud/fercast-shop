@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'FounderGrotesk-Light', sans-serif;
+  background-color: #f5f4f0;
+  overflow-x: hidden;
+  width: 100%;
+  color: #414042;
+}
+.store-products {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f4f0;
+  
+}
+
+.store-item {
+  width: 50%;
+  
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-img {
+  width: 100%;
+  height: 660px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.store-img img {
+  width: 650px;
+  height: auto;
+  z-index: 2;
+}
+
+.store-info {
+  width: 100%;
+  background-color: #f5f4f0;
+  border: 1px solid #ccc;
+  
+  
+  text-align: center;
+}
+
+.store-desc {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.store-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+.store-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #414042;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 30px;
+  transition: background 0.3s ease;
+}
+
+.store-btn:hover {
+  background-color: black;
+}
+
+
+@media (max-width: 768px) {
+  .store-products {
+    flex-direction: column;
+    
+  }
+
+  .store-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .store-img {
+    height: 380px;
+  }
+
+  .store-img img {
+    width: 400px;
+    margin-top: -40px;
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-perfumes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <header class="navbar">
+  <div class="nav-left">
+    <span class="logo"><a href="/index.html" style="text-decoration: none; color: #414042;">FERCAST MEN'S</a></span>
+  </div>
+  
+  
+  <div class="desktop-menu">
+    
+    <a href="/ropa.html" style="margin-left: 15px;">ROPA</a>
+    <a href="/perfumes.html"style="margin-left: 15px;">PERFUMES</a>
+    <a href="/joyas.html"style="margin-left: 15px;">JOYAS</a>
+    <a href="/nosotros.html"style="margin-left: 15px;">SOBRE NOSOTROS</a>
+    <a href="/giatallas.html"style="margin-left: 15px;">GUIA DE TALLAS</a>
+    <a href="/soporte.html"style="margin-left: 15px;">SOPORTE</a>
+    
+    
+    <a href="#" style="margin-left: 400px;"><i class="fas fa-user"></i></a>
+  </div>
+  <div class="nav-right">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+
+  
+  <nav class="mobile-menu" id="mobileMenu">
+    
+    <a href="/ropa.html">ROPA</a>
+    <a href="#">PERFUMES</a>
+    <a href="/joyas.html">JOYAS</a>
+    <a href="/nosotros.html">SOBRE NOSOTROS</a>
+    <a href="/giatallas.html">GUIA DE TALLAS</a>
+    <a href="/soporte.html">SOPORTE</a>
+    
+    
+    <a href="#"><i class="fas fa-user"></i></a>
+  </nav>
+</header>
+<div class="seccion-joyas">
+    <div class="titulo-joyas">
+        <h1>PERFUMES<br>FRAGANCIAS ATRACTIVAS PARA HOMBRE</h1>
+    </div>
+    
+    <div class="descripcion-joyas">
+        <p></p>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="store-products">
+  <!-- Producto 1 -->
+  <div class="store-item">
+    <div class="store-img" style="background-image: url('/images/PERFUME2.jpeg');">
+      
+    </div>
+    <div class="store-info">
+      <p class="store-desc">Perfume Feromonas Taboo 50 ML</p>
+      <p class="store-price">S/ 19</p>
+      <a href="#" class="store-btn">COMPRAR</a>
+    </div>
+  </div>
+
+  <!-- Producto 2 -->
+  <div class="store-item">
+    <div class="store-img" style="background-image: url('/images/Green_Cedar_-_SQUARE_3bb2688d-6a15-48fc-ae46-9aa7cb5ab96c.jpg');">
+      <img src="/images/perfume-removebg-preview.png" alt="Perfume XOOL Yanbal">
+    </div>
+    <div class="store-info">
+      <p class="store-desc">Perfume XOOL Yanbal</p>
+      <p class="store-price">S/ 49</p>
+      <a href="#" class="store-btn">COMPRAR</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="main-footer">
+  <div class="footer-top">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/fercast.mens18?igsh=MTY1MDRtazExODQyNQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1BzyFqbC6f/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@fercast.mens18?_t=ZS-8yVPvJG7lPU&_r=1"><i class="bi bi-tiktok"></i></a>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <ul>
+          <li><a href="#">CONTACTANOS</a></li>
+          <li><a href="#">FAQS</a></li>
+          <li><a href="#">STOCKISTS</a></li>
+          <li><a href="#">THE FABRIEK</a></li>
+          <li><a href="#">PERFUME GUIDE</a></li>
+          <li><a href="#">FRAGRANCE FINDER</a></li>
+          <li><a href="#">TERMS</a></li>
+          <li><a href="#">PRIVACY</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">100% CALIDAD</a></li>
+          <li><a href="#">BIOTECHNOLOGY</a></li>
+          <li><a href="#">CLEAN</a></li>
+          <li><a href="#">CRUELTY-FREE</a></li>
+          <li><a href="#">NON-TOXIC</a></li>
+          <li><a href="#">PHTHALATE-FREE</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">OUR STORY</a></li>
+          <li><a href="#">TRANSPARENCY</a></li>
+          <li><a href="#">SUSTAINABILITY</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 FERCAST. Desarrollado por - MATHIAS BENITES.</p>
+    <p class="footer-right">RON ▾</p>
+  </div>
+</footer>
+
+
+
+
+
+</body>
+<script>
+    let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      
+      navbar.classList.add('hidden');
+    } else {
+      
+      navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+
+
+
+
+
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
+
+
+
+function scrollCarousel(btn, direction) {
+  const section = btn.closest('.perf-product-section');
+  const scrollAmount = section.clientWidth; 
+  section.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+
+
+
+
+  
+</script>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página en construcción</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f4f0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .construction-box {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 480px;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    a {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @media (max-width: 600px) {
+      .construction-box {
+        width: 85%;
+        padding: 35px 25px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .icon {
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .construction-box {
+        padding: 30px 20px;
+        margin: 40px;
+      }
+
+      .icon {
+        font-size: 50px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      a {
+        padding: 9px 20px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="construction-box">
+    <div class="icon">👷‍♂️</div>
+    <h1>Estamos trabajando en esta página</h1>
+    <p>Muy pronto estará disponible. Gracias por tu paciencia 🙌</p>
+    <a href="index.html">Volver al inicio</a>
+  </div>
+</body>
+</html>
